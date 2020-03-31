@@ -10,7 +10,7 @@ scalar DateTime
 type Hobby {
   id: Int!
   name: String!
-  user: User
+  user: User!
 }
 
 type Query {

@@ -6,9 +6,7 @@ export class Hobby {
   @Field((type) => Int)
   id: number;
 
-  @Field((type) => String)
   name: string;
 
-  @Field((type) => User, { nullable: true })
   user: User;
 }
