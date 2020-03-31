@@ -7,12 +7,12 @@ export class UserResolver {
   constructor(private prisma: PrismaService) {}
 
   @Query((returns) => [User])
-  users() {
+  async users() {
     return this.prisma.user.findMany();
   }
 
   @ResolveField()
-  hobbies(@Parent() user: User) {
+  async hobbies(@Parent() user: User) {
     return this.prisma.hobby.findMany({
       where: { user: { id: user.id } },
     });
