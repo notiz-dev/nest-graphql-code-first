@@ -17,7 +17,7 @@ export class User {
 
   password: string;
 
-  @Field((type) => String, { nullable: true })
+  @Field((type) => String, { nullable: true, })
   name?: string;
 
   @Field((type) => [Hobby])
