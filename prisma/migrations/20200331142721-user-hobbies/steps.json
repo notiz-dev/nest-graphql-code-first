@@ -218,7 +218,7 @@
       "model": "Hobby",
       "field": "user",
       "type": "User",
-      "arity": "Required"
+      "arity": "Optional"
     },
     {
       "tag": "CreateDirective",

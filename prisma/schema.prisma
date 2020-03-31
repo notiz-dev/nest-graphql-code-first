@@ -20,5 +20,5 @@ model User {
 model Hobby {
   id   Int    @default(autoincrement()) @id
   name String
-  user User   @relation(references: [id])
+  user User?  @relation(references: [id])
 }
