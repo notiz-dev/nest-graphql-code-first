@@ -19,7 +19,7 @@ type Query {
 
 type User {
   id: Int!
-  createdAt: DateTime!
+  registeredAt: DateTime!
   updatedAt: DateTime!
   email: String!
   name: String

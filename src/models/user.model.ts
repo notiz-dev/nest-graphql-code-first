@@ -6,7 +6,7 @@ export class User {
   @Field((type) => Int)
   id: number;
 
-  @Field((type) => Date)
+  @Field((type) => Date, { name: 'registeredAt' })
   createdAt: Date;
 
   @Field((type) => Date)
@@ -17,7 +17,7 @@ export class User {
 
   password: string;
 
-  @Field({ nullable: true })
+  @Field((type) => String, { nullable: true })
   name?: string;
 
   @Field((type) => [Hobby])
