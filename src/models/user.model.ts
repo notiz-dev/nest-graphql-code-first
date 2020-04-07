@@ -18,6 +18,5 @@ export class User {
 
   name?: string;
 
-  @Field((type) => [Hobby])
   hobbies: Hobby[];
 }

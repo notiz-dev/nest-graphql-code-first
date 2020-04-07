@@ -19,8 +19,8 @@ type Query {
 type User {
   id: Int!
   registeredAt: DateTime!
-  hobbies: [Hobby!]!
   updatedAt: DateTime!
   email: String!
   name: String
+  hobbies: [Hobby!]!
 }
